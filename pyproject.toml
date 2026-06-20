@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=58"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-ode"
+version = "0.1.0"
+description = "Opinionated delivery engine for Python applications."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "ÂnimaLab", email = "animalab.desenvolvimento@gmail.com" }
+]
+keywords = ["ode", "architecture", "usecase", "mvvm", "workflow", "delivery-engine"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+
+[project.urls]
+Homepage = "https://github.com/animalab-netizen/python-ode"
+Repository = "https://github.com/animalab-netizen/python-ode"
+Issues = "https://github.com/animalab-netizen/python-ode/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

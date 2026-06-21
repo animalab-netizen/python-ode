@@ -7,7 +7,7 @@
 Current coordinates:
 
 - package: `python-ode`
-- version: `0.1.0`
+- version: `0.1.1`
 - repository: [github.com/animalab-netizen/python-ode](https://github.com/animalab-netizen/python-ode)
 
 ## Trusted Publishing
@@ -19,6 +19,7 @@ Repository-side workflow:
 - workflow file: `.github/workflows/release.yml`
 - provider model: GitHub Actions OIDC
 - publish trigger: push tag `v*`
+- GitHub Actions environment: `pypi`
 - required workflow permission: `id-token: write`
 - publication action: `pypa/gh-action-pypi-publish@release/v1`
 
@@ -48,7 +49,7 @@ pip install python-ode
 4. Update `CHANGELOG.md`
 5. Confirm version in `pyproject.toml`
 6. Commit release metadata
-7. Create and push tag `v0.1.0`
+7. Create and push tag `v0.1.1`
 
 ### Public Package Gate
 
@@ -56,10 +57,10 @@ pip install python-ode
 2. In PyPI, create or verify the Trusted Publisher entry for the intended repository workflow
 3. Confirm the GitHub workflow file is `.github/workflows/release.yml`
 4. Confirm the workflow job has `id-token: write`
-5. Push tag `v0.1.0`
-4. Verify the package page on PyPI
-5. Validate installation from a clean consumer with `pip install python-ode==0.1.0`
-6. Publish release notes with install and usage examples
+5. Push tag `v0.1.1`
+6. Verify the package page on PyPI
+7. Validate installation from a clean consumer with `pip install python-ode==0.1.1`
+8. Publish release notes with install and usage examples
 
 ## Packaging Notes
 

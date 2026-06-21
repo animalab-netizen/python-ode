@@ -25,7 +25,7 @@ The package is maintained by ÂnimaLab and is being positioned as the Python exp
 Current coordinates:
 
 - package: `python-ode`
-- version: `0.1.0`
+- version: `0.1.1`
 
 Installation:
 
